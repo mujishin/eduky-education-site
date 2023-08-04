@@ -1,0 +1,580 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous" />
+ 
+  <link href="https://api.mapbox.com/mapbox-gl-js/v2.1.1/mapbox-gl.css" rel="stylesheet" />
+  <script src="https://kit.fontawesome.com/f0960b84e5.js" crossorigin="anonymous"></script>
+  <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+  <link rel="stylesheet" href="style.css" />
+  <title>Educkey-Online Education</title>
+</head>
+
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg py-3 fixed-top">
+    <div class="container">
+      <a href="#" class="navbar-logo"><img src="./img/educkey-logo.png" alt=""></a>
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <i class="fa-solid fa-bars"></i>
+      </button>                
+
+      <div class="collapse navbar-collapse" id="navmenu">
+        <div class="form mx-5">
+          <i class="fa fa-search"></i>
+          <input type="text" class="form-control form-input" placeholder="Search">
+          <span class="left-pan"><i class="fa fa-microphone"></i></span>
+        </div>                  
+        <ul class="navbar-nav m-auto align-items-center">
+          <li class="nav-item px-2">
+            <a class="nav-link" href="#">Home</a>
+          </li>
+          <li class="nav-item px-2">
+            <a class="nav-link" href="#">Facilities</a>
+          </li>
+          <li class="nav-item px-2">
+            <a class="nav-link" href="#">Features</a>
+          </li>
+          <li class="nav-item px-2">
+            <a class="nav-link" href="#">Gallery</a>
+          </li>
+          <li class="nav-item px-2">
+            <a class="nav-link" href="#">Contact Us</a>
+          </li>
+        </ul>
+        <button class="nav-btn">Sign In</button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Showcase -->
+  <section class="hero-section p-5 p-lg-0 pt-lg-5 text-center text-sm-start  d-flex align-items-center">
+    <div class="container">
+      <div class="d-md-flex align-items-center justify-content-between">
+        <div>
+          <h1>Studying Online is now much Easier</h1>
+          <button class="btn btn-lg my-5" data-bs-toggle="modal" data-bs-target="#enroll">
+           Get Started
+          </button>
+        </div>
+        <img class="img-fluid w-50 " src="img/Stuck at Home Group Call.png" alt="" />
+      </div>
+    </div>
+  </section>
+
+  <section class="clients-section p-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-1">
+          <h1>250+</h1>
+          <p>Collabration</p>
+        </div>
+        <div class="col-md-11">
+            <div class="lc-block">
+                <div id="carouselLogos" class="carousel slide pt-5 pb-4" data-bs-ride="carousel">
+
+                    <div class="carousel-inner px-5">
+                        <div class="carousel-item active">
+                            <div class="row">
+                                <div class="col-6 col-lg-2 align-self-center">
+                                    <img class="d-block w-100 px-3 mb-3" src="https://cdn.livecanvas.com/media/logos/11.png" alt="">
+                                </div>
+                                <div class="col-6 col-lg-2  align-self-center">
+                                    <img class="d-block w-100 px-3  mb-3" src="https://cdn.livecanvas.com/media/logos/2.png" alt="">
+                                </div>
+                                <div class="col-6 col-lg-2  align-self-center">
+                                    <img class="d-block w-100 px-3  mb-3" src="https://cdn.livecanvas.com/media/logos/3.png" alt="">
+                                </div>
+                                <div class="col-6 col-lg-2  align-self-center">
+                                    <img class="d-block w-100 px-3  mb-3" src="https://cdn.livecanvas.com/media/logos/12.png" alt="">
+                                </div>
+                                <div class="col-6 col-lg-2  align-self-center">
+                                    <img class="d-block w-100 px-3  mb-3" src="https://cdn.livecanvas.com/media/logos/5.png" alt="">
+                                </div>
+                                <div class="col-6 col-lg-2  align-self-center">
+                                    <img class="d-block w-100 px-3  mb-3" src="https://cdn.livecanvas.com/media/logos/6.png" alt="">
+                                </div>
+                            </div>
+
+                        </div>
+    </div>
+    </div>
+            </div>
+        </div>
+        </div>
+    </div>
+  </section>
+
+  <section class="counter-section p-5">
+    <div class="container">
+    
+      <div class="row">
+  
+    <div class="four col-md-4">
+      <div class="counter-box">
+        <i class="fa-sharp fa-solid fa-children"></i>
+        <span data-purecounter-start="0" data-purecounter-end="1200" data-purecounter-duration="1" class="purecounter"></span>
+          <p>Students</p>
+      </div>
+    </div>
+    <div class="four col-md-4">
+      <div class="counter-box">
+        <i class="fa-solid fa-person-chalkboard"></i>
+        <span data-purecounter-start="0" data-purecounter-end="99" data-purecounter-duration="1" class="purecounter"></span>
+          <p>Teachers</p>                
+      </div>
+    </div>
+    <div class="four col-md-4">
+      <div class="counter-box">
+        <i class="fa-sharp fa-solid fa-book"></i>
+        <span data-purecounter-start="0" data-purecounter-end="176" data-purecounter-duration="1" class="purecounter"></span>
+          <p>Lessons</p>
+      </div>
+    </div>
+    </div>	
+  </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="about">
+
+    <div class="container" data-aos="fade-up" data-aos-delay="100">
+      <div class="row align-items-xl-center gy-5">
+
+        <div class="col-xl-5 content">
+          <h1>Our Facilities</h1>
+          <button class="btn btn-lg my-5" data-bs-toggle="modal" data-bs-target="#enroll">
+           Get Started
+          </button>
+        </div>
+
+        <div class="col-xl-7">
+          <div class="row gy-5 gx-5  icon-boxes">
+
+            <div class="col-md-6 " data-aos="fade-up" data-aos-delay="200">
+              <div class="icon-box-active">
+                <iconify-icon icon="ion:library"></iconify-icon>
+                <h3>Eius provident</h3>
+                <p>Magni repellendus vel ullam hic officia accusantium ipsa dolor omnis dolor voluptatem</p>
+              </div>
+            </div> <!-- End Icon Box -->
+
+            <div class="col-md-6" data-aos="fade-up" data-aos-delay="300">
+              <div class="icon-box">
+                <iconify-icon icon="icomoon-free:lab"></iconify-icon>
+                <h3>Rerum aperiam</h3>
+                <p>Autem saepe animi et aut aspernatur culpa facere. Rerum saepe rerum voluptates quia</p>
+              </div>
+            </div> <!-- End Icon Box -->
+
+            <div class="col-md-6" data-aos="fade-up" data-aos-delay="400">
+              <div class="icon-box">
+                <iconify-icon icon="majesticons:music"></iconify-icon>
+                <h3>Veniam omnis</h3>
+                <p>Omnis perferendis molestias culpa sed. Recusandae quas possimus. Quod consequatur corrupti</p>
+              </div>
+            </div> <!-- End Icon Box -->
+
+            <div class="col-md-6" data-aos="fade-up" data-aos-delay="500">
+              <div class="icon-box">
+                <iconify-icon icon="gridicons:computer"></iconify-icon>
+                <h3>Delares sapiente</h3>
+                <p>Sint et dolor voluptas minus possimus nostrum. Reiciendis commodi eligendi omnis quideme lorenda</p>
+              </div>
+            </div> <!-- End Icon Box -->
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+  </section>
+
+  <!-- features Sections -->
+  <section class="features-section">
+    <div class="container">
+      <h1 class="text-center">Our Facilities</h1>
+      <h6 class="text-center text-dark">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt </h6>
+      <div class="row align-items-center justify-content-between py-5">
+        <div class="col-md">
+          <img src="img/BANNER-FEATURE.png" class="img-fluid" alt="" />
+        </div>
+        <div class="col-md p-5">
+          <h2>A <span style="color: #66459F;">User Interface</span> Designed for the class room</h2>
+          <div class="icon-circle d-flex align-items-center py-3">
+            <iconify-icon icon="uis:apps"></iconify-icon>
+            <p class="px-3">Teachers don’t get lost in the grid voew and have a decided podium space</p>
+          </div>
+          <div class="icon-circle d-flex align-items-center py-3">
+            <iconify-icon icon="typcn:group"></iconify-icon>
+            <p class="px-3">Teachers don’t get lost in the grid voew and have a decided podium space</p>
+          </div>
+          <div class="icon-circle d-flex align-items-center py-3">
+            <iconify-icon icon="bxs:layer"></iconify-icon>
+            <p class="px-3">Teachers don’t get lost in the grid voew and have a decided podium space</p>
+          </div>
+          <a href="#" class="btn btn-light mt-3">
+            <i class="bi bi-chevron-right"></i> Read More
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- features premium course -->
+  <section class="course-section">
+    <div class="container">
+      <div class="row align-items-center justify-content-between py-5">
+      <div class="col-md-6">
+        <h6>FEATURES</h6>
+        <h1>Premium Courses</h1>
+        <h4>Life is horizon</h4>
+        <p>Teachers don’t get lost in the grid voew and have a decided podium space Teachers don’t get lost in the grid </p>
+        <div class="pre-icon d-flex align-items-center">
+          <iconify-icon icon="emojione-monotone:books"></iconify-icon>
+          <div class="des px-4 py-4">
+            <h6>Library Support</h6>
+            <p class="">Teachers don’t get lost in the grid voew and have a decided podium space</p>
+          </div>
+        </div>
+
+        <div class="pre-icon d-flex align-items-center">
+          <iconify-icon icon="emojione-monotone:books"></iconify-icon>
+          <div class="des px-4 py-5">
+            <h6>Library Support</h6>
+            <p class="">Teachers don’t get lost in the grid voew and have a decided podium space</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <img src="img/Stuck at Home Home Office.png" class="img-fluid" alt="" />
+      </div>
+    </div>
+  </div>
+  </section>
+
+ <!-- Testimonials -->
+ <section class="testimonials-section">
+  <div class="testimonial-slider">
+    <div id="carouselExampleControls" class="carousel carousel-dark" data-bs-ride="false">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <div class="testimonial-title">
+              <i class="bi bi-quote display-1"></i>
+              <h6>TESTIMONIALS</h6>
+              <h1 class="py-3">What Students Say About Us</h1>
+              <h4 class="text-dark">Life is horizon</h4>
+              <p class="text-dark">Teachers don’t get lost in the grid voew and have a decided podium space Teachers don’t get lost in the grid </p>
+            </div>
+            <div class="navi-btn">
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden text-light">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+          </div>
+          <div class="col-md-6">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <div class="card">
+                  <div class="card-body">
+                    <iconify-icon icon="carbon:quotes"></iconify-icon>
+                    <p class="card-text mx-3 py-3 text-light">Teachers don’t get lost in the grid voew and have a decided podium space Teachers don’t get lost in the grid Teachers don’t get lost in the grid voew and have a decided podium space Teachers don’t get lost in the grid 
+                      card's content.</p>
+                      <div class="avatar d-flex align-items-center">
+                        <img src="./img/Ellipse 11.png" alt="">
+                        <div class="des px-4 pt-2">
+                          <h6 class="text-light">Antonio sanies</h6>
+                          <p class="text-light">Designer</p>
+                        </div>
+                      </div>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="card">
+                  <div class="card-body">
+                    <iconify-icon icon="carbon:quotes"></iconify-icon>
+                    <p class="card-text mx-3 py-3 text-light">Teachers don’t get lost in the grid voew and have a decided podium space Teachers don’t get lost in the grid Teachers don’t get lost in the grid voew and have a decided podium space Teachers don’t get lost in the grid 
+                      card's content.</p>
+                      <div class="avatar d-flex align-items-center">
+                        <img src="./img/Ellipse 11.png" alt="">
+                        <div class="des px-4 pt-2">
+                          <h6 class="text-light">Free Support</h6>
+                          <p class="text-light">Designer</p>
+                        </div>
+                      </div>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="card">
+                  <div class="card-body">
+                    <iconify-icon icon="carbon:quotes"></iconify-icon>
+                    <p class="card-text mx-3 py-3 text-light">Teachers don’t get lost in the grid voew and have a decided podium space Teachers don’t get lost in the grid Teachers don’t get lost in the grid voew and have a decided podium space Teachers don’t get lost in the grid 
+                      card's content.</p>
+                      <div class="avatar d-flex align-items-center">
+                        <img src="./img/Ellipse 11.png" alt="">
+                        <div class="des px-4 pt-2">
+                          <h6 class="text-light">Free Support</h6>
+                          <p class="text-light">Designer</p>
+                        </div>
+                      </div>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="card">
+                  <div class="card-body">
+                    <iconify-icon icon="carbon:quotes"></iconify-icon>
+                    <p class="card-text mx-3 py-3 text-light">Teachers don’t get lost in the grid voew and have a decided podium space Teachers don’t get lost in the grid Teachers don’t get lost in the grid voew and have a decided podium space Teachers don’t get lost in the grid 
+                      card's content.</p>
+                      <div class="avatar d-flex align-items-center">
+                        <img src="./img/Ellipse 11.png" alt="">
+                        <div class="des px-4 pt-2">
+                          <h6 class="text-light">Free Support</h6>
+                          <p class="text-light">Designer</p>
+                        </div>
+                      </div>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="card">
+                  <div class="card-body">
+                    <iconify-icon icon="carbon:quotes"></iconify-icon>
+                    <p class="card-text mx-3 py-3 text-light">Teachers don’t get lost in the grid voew and have a decided podium space Teachers don’t get lost in the grid Teachers don’t get lost in the grid voew and have a decided podium space Teachers don’t get lost in the grid 
+                      card's content.</p>
+                      <div class="avatar d-flex align-items-center">
+                        <img src="./img/Ellipse 11.png" alt="">
+                        <div class="des px-4 pt-2">
+                          <h6 class="text-light">Free Support</h6>
+                          <p class="text-light">Designer</p>
+                        </div>
+                      </div>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="card">
+                  <div class="card-body">
+                    <iconify-icon icon="carbon:quotes"></iconify-icon>
+                    <p class="card-text mx-3 py-3 text-light">Teachers don’t get lost in the grid voew and have a decided podium space Teachers don’t get lost in the grid Teachers don’t get lost in the grid voew and have a decided podium space Teachers don’t get lost in the grid 
+                      card's content.</p>
+                      <div class="avatar d-flex align-items-center">
+                        <img src="./img/Ellipse 11.png" alt="">
+                        <div class="des px-4 pt-2">
+                          <h6 class="text-light">Free Support</h6>
+                          <p class="text-light">Designer</p>
+                        </div>
+                      </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+ </section>  
+
+<!-- Gallery-section -->
+<section class="gallery-section">
+  <h6 class="text-center">GALLERY</h6>
+  <h1 class="py-3 text-center">Photos & Videos</h1>
+  <div class="gallery-boxes">
+    <div class="lightbox">
+      <div class="row">
+        <div class="col-lg-6">
+          <img
+            src="/img/Rectangle 21.png"
+            alt="Table Full of Spices"
+            class="w-100 mb-2 mb-md-4 shadow-1-strong rounded"
+          />
+        </div>
+        <div class="col-lg-6">
+          <div class="row">
+            <div class="col-sm-6">
+              <img
+            src="/img/Rectangle 22.png"
+            alt="Table Full of Spices"
+            class="w-100 mb-2 mb-md-4 shadow-1-strong rounded"
+          />
+            </div>
+            <div class="col-sm-6">
+              <img
+            src="/img/Rectangle 23.png"
+            alt="Table Full of Spices"
+            class="w-100 mb-2 mb-md-4 shadow-1-strong rounded"
+          />
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-sm-6">
+              <img
+            src="/img/Rectangle 24.png"
+            alt="Table Full of Spices"
+            class="w-100 mb-2 mb-md-4 shadow-1-strong rounded"
+          />
+            </div>
+            <div class="col-sm-6">
+              <img
+            src="/img/Rectangle 3.png"
+            alt="Table Full of Spices"
+            class="w-100 mb-2 mb-md-4 shadow-1-strong rounded"
+          />
+            </div>
+          </div>
+        </div>
+      </div>
+      </div>  
+    </div>
+  </div>
+</section>
+
+<!-- contact-section -->
+<section class="contact-section">
+  <div class="container">
+<div class="row">
+  <div class="col-md-6">
+  <h6 class="">CONTACT US</h6>
+  <h1 class="py-3">Register Now!</h1>
+  <h4 class="py-3">Life is horizon</h4>
+  <p>Teachers don’t get lost in the grid voew and have a decided podium space Teachers don’t get lost in the grid </p>
+  <div id="countdown">
+    <ul class="py-5">
+      <li><span id="days"></span>DAYS</li>
+      <li><span id="hours"></span>HOURS</li>
+      <li><span id="minutes"></span>MINUTES</li>
+      <li><span id="seconds"></span>SECONDS</li>
+    </ul>
+  </div>
+</div>
+<div class="col-md-6">
+  <div class="contact-box px-5">
+  <form class="contact-form">
+    <!-- Name input -->
+    <div class="form-outline mb-4">
+      <input type="text" id="form4Example1" placeholder="Your Name" class="form-control" />
+    </div>
+  
+    <!-- Email input -->
+    <div class="form-outline mb-4">
+      <input type="email" id="form4Example2" placeholder="Your Email" class="form-control" />
+    </div>
+
+    <div class="form-outline mb-4">
+      <input type="text" id="form4Example1" placeholder="Subject" class="form-control " />
+    </div>
+  
+    <!-- Message input -->
+    <div class="form-outline mb-4">
+      <textarea class="form-control" id="form4Example3" placeholder="Message" rows="4"></textarea>
+    </div>
+  
+    <!-- Submit button -->
+    <div class="btn-center text-end">
+    <button type="submit" class="btn-b">Submit</button>
+  </div>
+  </form>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+
+  <section class="p-5">
+    <div class="container">
+      <div class="row g-4">
+        <div class="col-md">
+          <h2 class="text-center mb-4">Contact Info</h2>
+          <ul class="list-group list-group-flush lead">
+            <li class="list-group-item">
+              <span class="fw-bold">Main Location:</span> 50 Main st Boston MA
+            </li>
+            <li class="list-group-item">
+              <span class="fw-bold">Enrollment Phone:</span> (555) 555-5555
+            </li>
+            <li class="list-group-item">
+              <span class="fw-bold">Student Phone:</span> (333) 333-3333
+            </li>
+            <li class="list-group-item">
+              <span class="fw-bold">Enrollment Email:</span> (555)
+              enroll@frontendbc.test
+            </li>
+            <li class="list-group-item">
+              <span class="fw-bold">Student Email:</span>
+              student@frontendbc.test
+            </li>
+          </ul>
+        </div>
+        <div class="col-md">
+          <div id="map"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer-section">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6">
+          <div class="footer-box-1">
+            <img src="./img/educkey-logo.png" class="img-fluid ">
+            <p class="py-5 text-light">Teachers don’t get lost in the grid voew and have a decided podium space Teachers don’t get lost in the grid </p>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="footer-box-2">
+            <h6 class="text-light">QUICK LINKS</h6>
+            <ul>
+              <li>Home</li>
+              <li>Facilities</li>
+              <li>Features</li>
+              <li>Gallery</li>
+              <li>Contact Us </li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="footer-box-2 ">
+            <h6 class="text-light pb-4">QUICK LINKS</h6>
+            <form action="">
+              <div class="form-outline mb-4">
+                <input type="email" id="form4Example2" placeholder="Your Email" class="form-control" />
+              </div>
+              <div class="btn-center text-start">
+                <button type="submit" class="btn-b">Submit</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  
+  <script src="./vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="https://api.mapbox.com/mapbox-gl-js/v2.1.1/mapbox-gl.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.1/js/bootstrap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+
+  <script src="scripit.js"></script>
+</body>
+
+</html>
